@@ -64,5 +64,13 @@
     { id: 2, name: "Rahim" },
     { id: 3, name: "Karim" }
     ];
-    let employee = employees.find(employee => employee.id ===2);
+    let employee = employees.find(employee => employee.name === "Karim");
     console.log(employee);
+
+    let examiners = [
+    { name: "Tamanna", roll: 30000 },
+    { name: "Rahim", roll: 40000 },
+    { name: "Karim", roll: 50000 }
+    ];
+    let examiner = examiners.find(rollno => rollno.name === "Tamanna");
+    console.log(examiner);
