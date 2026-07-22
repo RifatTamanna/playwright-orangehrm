@@ -54,6 +54,15 @@ console.log(allTools);
 
 
 
+let frontend = ["HTML", "CSS"];
+let backend = ["Node.js", "Express"];
+let database = ["MySQL"];
+
+let allType = [...frontend, ...backend, ...database];
+console.log(allType);
+
+
+
 
 // Rest Operator (...)
 
@@ -96,9 +105,12 @@ let qaTools = {
     automations: ["Playwright", "Selenium"],
     performances: ["JMeter"]
 };
-//let {manuals} = qaTools;
-//console.log(manuals);
+// let {manuals} = qaTools;
+// console.log(manuals);
 
-let {manuals, automations, performances} = qaTools;
-let allTool = [...manuals, ...automations, ...performances];
+let {manuals, automations, performances} = qaTools; // destructuring array
+let allTool = [...manuals, ...automations, ...performances]; // spread operator
 console.log(allTool);
+
+
+

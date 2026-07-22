@@ -66,3 +66,16 @@ let email = "QA@Example.COM ";
 console.log(email.trim());
 console.log(email.toLowerCase());
 console.log(email.includes("Example"));
+
+
+
+
+
+
+let numbers = [10, 20, 30, 40];
+
+let [first, second, ...others] = numbers;
+
+console.log(first);
+console.log(second);
+console.log(others);
